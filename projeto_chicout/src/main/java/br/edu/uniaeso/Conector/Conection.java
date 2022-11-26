@@ -8,15 +8,15 @@ import java.sql.ResultSet;
 public class Conection {
     public static final String DRIVER = "org.h2.Driver";
     public static final String URL = "jdbc:h2:file:.\\DB";
-    public static final String USER = "sa";
-    public static final String PASS = "";
+    public static final String USER = "sa";//alterar
+    public static final String PASS = "";//alterar
     
     public static Connection getConnection() {
         try {
             Class.forName(DRIVER);
             return DriverManager.getConnection(URL, USER, PASS);
         } catch (Exception ex) {
-            throw new RuntimeException("Erro na conexão com o banco de dados");
+            throw new RuntimeException("Erro ao conectar com o banco de dados");
         }
     }
 
@@ -28,7 +28,7 @@ public class Conection {
             }
 
         } catch (Exception ex) {
-            throw new RuntimeException("Erro ao encerrar a conexão com o banco de dados");
+            throw new RuntimeException("Erro ao encerrar a conexao com o banco de dados");
         }
     }
 
@@ -42,7 +42,7 @@ public class Conection {
                 statement.close();
             }
         } catch (Exception ex) {
-            throw new RuntimeException("Erro ao encerrar a conexão com o banco de dados");
+            throw new RuntimeException("Erro ao encerrar a conexao com o banco de dados");
         }
     }
 
