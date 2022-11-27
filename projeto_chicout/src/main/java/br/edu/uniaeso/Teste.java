@@ -13,8 +13,9 @@ public class Teste
         System.out.println(disciplina.getId_disciplina()+" "+disciplina.getCarga_horaria()+ " "+
         disciplina.getNome_disciplina());
 
-        Turma turma = new Turma("3 periodo", 10, 1);
-        System.out.println(turma.getIdTurma()+" "+turma.getqTdAlunos()+" "+turma.getturmaNome());
+        Turma turma = new Turma("3 periodo", 10, 1, 1, 1, 1);
+        System.out.println(turma.getIdTurma()+" "+turma.getQtdAlunos()+" "+turma.getTurmaNome()+" "+
+        turma.getIdAluno()+" "+turma.getIdDisciplina()+" "+turma.getIdCurso());
 
         Professor professor = new Professor("Fabio", "Fabio@gmail.com",
         "Rua tal do sla o q", 3, 25, "998085748",1,1);

@@ -1,24 +1,29 @@
 package br.edu.uniaeso.classes;
 public class Turma {
-    private int idTurma, qTdAlunos;
+    private int idTurma, qtdAlunos, idAluno, idDisciplina, idCurso;
     private String turmaNome;
 
-    public Turma(String turmaNome, int qTdAlunos, int idTurma) {
-        setturmaNome(turmaNome);
+    public Turma(){}
+
+    public Turma(String turmaNome, int qtdAlunos, int idTurma, int idAluno, int idDisciplina, int idCurso) {
+        setTurmaNome(turmaNome);
         setIdTurma(idTurma);
-        setqTdAlunos(qTdAlunos);
+        setQtdAlunos(qtdAlunos);
+        setIdAluno(idAluno);
+        setIdDisciplina(idDisciplina);
+        setIdCurso(idCurso);
     }
     
-    public int getqTdAlunos() {
-        return qTdAlunos;
+    public int getQtdAlunos() {
+        return qtdAlunos;
     }
-    public String getturmaNome() {
+    public String getTurmaNome() {
         return turmaNome;
     }
-    public void setqTdAlunos(int qTdAlunos) {
-        this.qTdAlunos = qTdAlunos;
+    public void setQtdAlunos(int qTdAlunos) {
+        this.qtdAlunos = qTdAlunos;
     }
-    public void setturmaNome(String turmaNome) {
+    public void setTurmaNome(String turmaNome) {
         this.turmaNome = turmaNome;
     }
     public int getIdTurma() {
@@ -26,5 +31,23 @@ public class Turma {
     }
     public void setIdTurma(int idTurma) {
         this.idTurma = idTurma;
+    }
+    public int getIdAluno() {
+        return idAluno;
+    }
+    public void setIdAluno(int idAluno) {
+        this.idAluno = idAluno;
+    }
+    public int getIdDisciplina() {
+        return idDisciplina;
+    }
+    public void setIdDisciplina(int idDisciplina) {
+        this.idDisciplina = idDisciplina;
+    }
+    public int getIdCurso() {
+        return idCurso;
+    }
+    public void setIdCurso(int idCurso) {
+        this.idCurso = idCurso;
     }
 }
