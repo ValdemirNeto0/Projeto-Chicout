@@ -1,15 +1,19 @@
 package br.edu.uniaeso.classes;
 public class Professor {
-    private String NomeProfessor, EmailProf, Enderecoprof,Telefoneprof;
-    private int IdadeProf, idProfessor;
+    private String NomeProfessor, EmailProf, EnderecoProf,TelefoneProf;
+    private int IdadeProf, idProfessor, idTurma, idCurso;
 
-    public Professor(String nomeProfessor, String emailProf, String enderecoprof, int idProfessor, int idadeProf, String telefoneprof) {
-        NomeProfessor = nomeProfessor;
-        EmailProf = emailProf;
-        Enderecoprof = enderecoprof;
+    public Professor(){}
+
+    public Professor(String nomeProfessor, String emailProf, String enderecoProf, int idProfessor, int idadeProf, String telefoneProf, int idTurma, int idCurso) {
+        this.NomeProfessor = nomeProfessor;
+        this.EmailProf = emailProf;
+        this.EnderecoProf = enderecoProf;
         this.idProfessor = idProfessor;
-        IdadeProf = idadeProf;
-        Telefoneprof = telefoneprof;
+        this.IdadeProf = idadeProf;
+        this.TelefoneProf = telefoneProf;
+        this.idCurso = idCurso;
+        this.idTurma = idTurma;
     }
 
     public String getNomeProfessor() {
@@ -24,11 +28,11 @@ public class Professor {
     public void setEmailProf(String emailProf) {
         EmailProf = emailProf;
     }
-    public String getEnderecoprof() {
-        return Enderecoprof;
+    public String getEnderecoProf() {
+        return EnderecoProf;
     }
-    public void setEnderecoprof(String enderecoprof) {
-        Enderecoprof = enderecoprof;
+    public void setEnderecoProf(String enderecoprof) {
+        EnderecoProf = enderecoprof;
     }
     public int getIdProfessor() {
         return idProfessor;
@@ -42,10 +46,22 @@ public class Professor {
     public void setIdadeProf(int idadeProf) {
         IdadeProf = idadeProf;
     }
-    public String getTelefoneprof() {
-        return Telefoneprof;
+    public String getTelefoneProf() {
+        return TelefoneProf;
     }
-    public void setTelefoneprof(String telefoneprof) {
-        Telefoneprof = telefoneprof;
+    public void setTelefoneProf(String telefoneprof) {
+        TelefoneProf = telefoneprof;
+    }
+    public int getIdTurma() {
+        return idTurma;
+    }
+    public void setIdTurma(int idTurma) {
+        this.idTurma = idTurma;
+    }
+    public int getIdCurso() {
+        return idCurso;
+    }
+    public void setIdCurso(int idCurso) {
+        this.idCurso = idCurso;
     }
 }

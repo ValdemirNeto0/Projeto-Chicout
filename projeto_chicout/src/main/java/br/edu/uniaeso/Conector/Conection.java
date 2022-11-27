@@ -4,12 +4,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-
 public class Conection {
     public static final String DRIVER = "org.h2.Driver";
     public static final String URL = "jdbc:h2:file:.\\DB";
-    public static final String USER = "sa";//alterar
-    public static final String PASS = "";//alterar
+    public static final String USER = "";
+    public static final String PASS = "";
     
     public static Connection getConnection() {
         try {
@@ -21,19 +20,16 @@ public class Conection {
     }
 
     public static void closeConnection(Connection connection) {
-
         try {
             if (connection != null) {
                 connection.close();
             }
-
         } catch (Exception ex) {
             throw new RuntimeException("Erro ao encerrar a conexao com o banco de dados");
         }
     }
 
     public static void closeConnection(Connection connection, PreparedStatement statement) {
-
         try {
             if (connection != null) {
                 connection.close();
@@ -47,7 +43,6 @@ public class Conection {
     }
 
     public static void closeConnection(Connection connection, PreparedStatement statement, ResultSet resultSet) {
-
         try {
             if (connection != null) {
                 connection.close();

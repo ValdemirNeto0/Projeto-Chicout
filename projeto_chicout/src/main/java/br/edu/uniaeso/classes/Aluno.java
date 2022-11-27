@@ -6,12 +6,14 @@ public class Aluno {
 
     public Aluno(){}
 
-    public Aluno(int idAluno, int idade, String nome, String endereco, String email) {
+    public Aluno(int idAluno, int idade, String nome, String endereco, String email, int idCurso, int idTurma) {
         this.idAluno = idAluno;
         this.idade = idade;
         this.nome = nome;
         this.endereco = endereco;
         this.email = email;
+        this.idCurso = idCurso;
+        this.idTurma = idTurma;
     }
 
     //get e setters
