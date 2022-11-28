@@ -2,14 +2,16 @@ package br.edu.uniaeso.classes;
 
 public class Curso {
     private int idCurso, cargaHoraria,qtdAlunos, qtdProfessores;
-    private String nome;
+    private String nomeCurso;
 
-    public Curso(int idCurso, int cargaHoraria, int qtdAlunos, int qtdProfessores, String nome){
+    public Curso(){}
+
+    public Curso(int idCurso, int cargaHoraria, int qtdAlunos, int qtdProfessores, String nomeCurso){
         this.idCurso = idCurso;
         this.cargaHoraria = cargaHoraria;
         this.qtdAlunos = qtdAlunos;
         this.qtdProfessores = qtdProfessores;
-        this.nome = nome;
+        this.nomeCurso = nomeCurso;
     }
 
     public int getIdCurso() {
@@ -36,10 +38,10 @@ public class Curso {
     public void setQtdProfessores(int qtdProfessores) {
         this.qtdProfessores = qtdProfessores;
     }
-    public String getNome() {
-        return nome;
+    public String getNomeCurso() {
+        return nomeCurso;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCurso(String nomeCurso) {
+        this.nomeCurso = nomeCurso;
     }
 }

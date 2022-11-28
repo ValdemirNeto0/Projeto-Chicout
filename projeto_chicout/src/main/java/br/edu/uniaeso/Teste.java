@@ -25,6 +25,6 @@ public class Teste
 
         Curso curso = new Curso(1, 120, 1, 1, "ADS");
         System.out.println(curso.getIdCurso()+" "+curso.getCargaHoraria()+" "+curso.getQtdAlunos()+" "+
-        curso.getQtdProfessores()+" "+curso.getNome());
+        curso.getQtdProfessores()+" "+curso.getNomeCurso());
     }
 }
