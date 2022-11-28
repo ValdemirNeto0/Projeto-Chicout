@@ -99,7 +99,7 @@ public class ProfessorDAO {
       String sql = "UPDATE professores SET NomeProfessor = ?, Endereco = ?, EmailProfessores = ?, TelefoneProf = ?, IdadeProf = ?, idTurma = ?, idCurso = ? WHERE idProfessor = ?";
       Connection con = null;
       PreparedStatement statement = null;
-      for (int i = 0; i < 8; i++) {
+      for (int i = 0; i < 7; i++) {
         if (params[i] == null) {
           switch (i) {
             case 0:
@@ -138,7 +138,7 @@ public class ProfessorDAO {
           statement.setInt(8, professores.getIdProfessor());
           statement.execute();
         } catch (Exception ex) {
-          throw new RuntimeException("Erro ao alterar tarefa " + ex.getMessage(), ex);
+          throw new RuntimeException("Erro ao alterar Professor" + ex.getMessage(), ex);
         } finally {
           Conection.closeConnection(con, statement);
         }
