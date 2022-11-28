@@ -10,8 +10,6 @@ import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import br.edu.uniaeso.Conector.*;
-
-
 public class ProfessorDAO {
   public Optional<Professor> get(long id) {
     String sql = "SELECT * FROM professores WHERE idProfessores = " + id;
@@ -134,8 +132,7 @@ public class ProfessorDAO {
           statement.setString(4, params[3]);
           statement.setString(5, params[4]);
           statement.setInt(6, Integer.parseInt(params[5]));
-          statement.setInt(7, Integer.parseInt(params[6]));
-          statement.setInt(8, professores.getIdProfessor());
+          statement.setInt(7, professores.getIdProfessor());
           statement.execute();
         } catch (Exception ex) {
           throw new RuntimeException("Erro ao alterar Professor" + ex.getMessage(), ex);
